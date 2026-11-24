@@ -3,18 +3,10 @@
 public class Main {
     public static void main(String[] args) {
         Car myCar = new Car("Toyota", "Camry");
-        myCar.setSpeed(100);
-        System.out.println( myCar.getSpeed());
-        myCar.setSpeed(-50);
-        System.out.println( myCar.getSpeed());
-        myCar.setSpeed(250);
-        System.out.println( myCar.getSpeed());
-        //myCar.showInfo();
-
-        //myCar.accelerate();
-        //myCar.accelerate();
-        //myCar.accelerate();
-
-        //myCar.showInfo();
+        for ( int i=0; i < 21; i++){
+            System.out.println( myCar.accelerate());
+        }
+        int currentSpeed = myCar.accelerate();
+        System.out.println( currentSpeed);
     }
 }
